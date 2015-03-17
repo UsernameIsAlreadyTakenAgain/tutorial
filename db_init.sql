@@ -46,4 +46,7 @@ CREATE TABLE `Person` (
 CREATE USER 'dataverse'@'localhost' IDENTIFIED BY 'dataverse';
 grant all privileges on `infsci2711_tutorial` to 'dataverse'@'localhost' WITH GRANT OPTION;
 
+CREATE USER 'dataverse'@'%' IDENTIFIED BY 'dataverse';
+grant all privileges on `infsci2711_tutorial` to 'dataverse'@'%' WITH GRANT OPTION;
+
 FLUSH PRIVILEGES;
