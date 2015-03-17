@@ -1,6 +1,3 @@
-CREATE USER 'dataverse'@'localhost' IDENTIFIED BY 'dataverse';
-
-
 CREATE DATABASE  IF NOT EXISTS `infsci2711_tutorial` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `infsci2711_tutorial`;
 -- MySQL dump 10.13  Distrib 5.6.11, for osx10.6 (i386)
@@ -45,3 +42,6 @@ CREATE TABLE `Person` (
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2015-03-17  9:55:15
+
+CREATE USER 'dataverse'@'localhost' IDENTIFIED BY 'dataverse';
+grant all privileges on infsci2711_tutorial to dataverse@localhost;
