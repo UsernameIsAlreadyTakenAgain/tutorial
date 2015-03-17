@@ -39,5 +39,17 @@
 			<version>${jersey.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>edu.pitt.sis.infsci2711</groupId>
+			<artifactId>multidbsutils</artifactId>
+			<version>0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>edu.pitt.sis.infsci2711</groupId>
+			<artifactId>tutorialserver</artifactId>
+			<version>0.1-SNAPSHOT</version>
+		</dependency>
+
 	</dependencies>
 </project>
