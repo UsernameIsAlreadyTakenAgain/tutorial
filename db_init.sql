@@ -44,5 +44,5 @@ CREATE TABLE `Person` (
 -- Dump completed on 2015-03-17  9:55:15
 
 CREATE USER 'dataverse'@'localhost' IDENTIFIED BY 'dataverse';
-grant all privileges on infsci2711_tutorial to dataverse@localhost;
+grant all privileges on `infsci2711_tutorial` to 'dataverse'@'localhost' IDENTIFIED BY 'dataverse';
 FLUSH PRIVILEGES;
