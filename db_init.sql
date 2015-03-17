@@ -45,3 +45,4 @@ CREATE TABLE `Person` (
 
 CREATE USER 'dataverse'@'localhost' IDENTIFIED BY 'dataverse';
 grant all privileges on infsci2711_tutorial to dataverse@localhost;
+FLUSH PRIVILEGES;
