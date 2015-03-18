@@ -7,23 +7,25 @@ public class TutorialServer {
 	public static void main(final String[] args) throws Exception {
 		final JerseyJettyServer server = new JerseyJettyServer(7654, "edu.pitt.sis.infsci2711.tutorial.rest");
 		
-		Thread serverTread = new Thread(new Runnable() {
-			
-			@Override
-			public void run() {
-				try {
-					server.start();
-				} catch (Exception e) {
-					throw new RuntimeException(e);
-				}
-			}
-		});
+		server.start();
 		
-		serverTread.start();
-		
-		System.out.println("NOTE: To stop the server, focus on console and hit enter");
-		System.in.read();
-		
-		server.stop();
+//		Thread serverTread = new Thread(new Runnable() {
+//			
+//			@Override
+//			public void run() {
+//				try {
+//					server.start();
+//				} catch (Exception e) {
+//					throw new RuntimeException(e);
+//				}
+//			}
+//		});
+//		
+//		serverTread.start();
+//		
+//		System.out.println("NOTE: To stop the server, focus on console and hit enter");
+//		System.in.read();
+//		
+//		server.stop();
 	}
 }
