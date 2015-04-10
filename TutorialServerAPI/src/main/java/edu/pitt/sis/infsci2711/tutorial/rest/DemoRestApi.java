@@ -35,7 +35,7 @@ public class DemoRestApi {
 		//Can send another request. Here is example of POST
 		
 		Response result2 = JerseyClientUtil.doPost(PropertiesManager.getInstance().getStringProperty("metastore.rest.base"),
-				PropertiesManager.getInstance().getStringProperty("metastore.rest.getAllDatasources"),
+				PropertiesManager.getInstance().getStringProperty("metastore.rest.addDatasource"),
 				new SomeViewModel(123));
 		
 		// do something with result2 if needed
